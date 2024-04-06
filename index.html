@@ -21,104 +21,17 @@
 <div id="down_hinweis"></div>
 
 <script>
-var songs = [
-    {
-        url: "files/data2_00002.ogg",
-        name: "files/data2_00002.ogg",
-        artist: "unknown",
-        description: "description",
-    },
-    {
-        url: "files/data2_00003.ogg",
-        name: "files/data2_00003.ogg",
-    },
-    {
-        url: "files/data2_00004.ogg",
-        name: "files/data2_00004.ogg",
-    },
-    {
-        url: "files/data2_00005.ogg",
-        name: "files/data2_00005.ogg",
-    },
-    {
-        url: "files/data2_00006.ogg",
-        name: "files/data2_00006.ogg",
-    },
-    {
-        url: "files/data2_00007.ogg",
-        name: "files/data2_00007.ogg",
-    },
-    {
-        url: "files/data2_00008.ogg",
-        name: "files/data2_00008.ogg",
-    },
-    {
-        url: "files/data2_00009.ogg",
-        name: "files/data2_00009.ogg",
-    },
-    {
-        url: "files/data2_00197.ogg",
-        name: "files/data2_00197.ogg",
-    },
-    {
-        url: "files/data2_00254.ogg",
-        name: "files/data2_00254.ogg",
-    },
-    {
-        url: "files/data2_00256.ogg",
-        name: "files/data2_00256.ogg",
-    },
-    {
-        url: "files/data2_00257.ogg",
-        name: "files/data2_00257.ogg",
-    },
-    {
-        url: "files/data2_00258.ogg",
-        name: "files/data2_00258.ogg",
-    },
-    {
-        url: "files/data2_00259.ogg",
-        name: "files/data2_00259.ogg",
-    },
-    {
-        url: "files/data2_00260.ogg",
-        name: "files/data2_00260.ogg",
-    },
-    {
-        url: "files/data2_00261.ogg",
-        name: "files/data2_00261.ogg",
-    },
-    {
-        url: "files/data2_00262.ogg",
-        name: "files/data2_00262.ogg",
-    },
-    {
-        url: "files/data2_00292.ogg",
-        name: "files/data2_00292.ogg",
-    },
-    {
-        url: "files/data2_00401.ogg",
-        name: "files/data2_00401.ogg",
-    },
-    {
-        url: "files/data2_00403.ogg",
-        name: "files/data2_00403.ogg",
-    },
-    {
-        url: "files/data2_00466.ogg",
-        name: "files/data2_00466.ogg",
-    },
-    {
-        url: "files/data2_00467.ogg",
-        name: "files/data2_00467.ogg",
-    },
-    {
-        url: "files/data2_00497.ogg",
-        name: "files/data2_00497.ogg",
-    },
+var songs = [];
 
-    // Add more songs here...
-];
+fetch("files/metadata.json")
+    .then(response => response.json())
+    .then(data => {
+        songs = data;
+        createPlaylist();
+    })
+    .catch(error => {
+        console.error("Error loading metadata:", error);
+    });
 
 var autoplay = true;
 var currentIndex = 0;
