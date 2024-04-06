@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" media="screen" href="player.css" />
+<title>player</title>
+</head>
+<body onload="Lautstaerke()">
+
+<div id="h2"></div>
+<div id="ie_fallback"></div>
+<div id="player">
+<audio id="innerplayer" src="" controls></audio>
+<ul id="playlist"></ul>
+</div>
+
+<div id="down_hinweis"></div>
+
+<script>
+var url = [
+    "https://cdn.treudler.net/18/190905224714075-uGEWb-x.mp3",
+    "https://cdn.treudler.net/18/190905222611860-ZrM0v-x.mp3",
+    "https://cdn.treudler.net/18/190905222658546-YH6rb-x.mp3",
+    "https://cdn.treudler.net/18/190905222710535-fbHmR-x.mp3",		
+    "https://cdn.treudler.net/18/190905222736082-w3Bxf-x.mp3",
+    "https://cdn.treudler.net/18/190905222822984-QjyL4-x.mp3",
+    "https://cdn.treudler.net/18/190905222840877-mtsOk-x.mp3",
+    "https://cdn.treudler.net/18/190905222904880-yDwNj-x.mp3",
+    "https://cdn.treudler.net/18/190905224741300-ZsybV-x.mp3",
+    "https://cdn.treudler.net/18/190905224951800-ioiW1-x.mp3",
+    "https://cdn.treudler.net/18/190905224019533-JCHxu-x.mp3",
+    "files/data2_00002.ogg",
+    "files/data2_00003.ogg",
+    "files/data2_00004.ogg",
+    "files/data2_00005.ogg",
+    "files/data2_00006.ogg",
+    "files/data2_00007.ogg",
+    "files/data2_00008.ogg",
+    "files/data2_00009.ogg",
+    "files/data2_00197.ogg",
+    "files/data2_00254.ogg",
+    "files/data2_00256.ogg",
+    "files/data2_00257.ogg",
+    "files/data2_00258.ogg",
+    "files/data2_00259.ogg",
+    "files/data2_00260.ogg",
+    "files/data2_00261.ogg",
+    "files/data2_00262.ogg",
+    "files/data2_00292.ogg",
+    "files/data2_00401.ogg",
+    "files/data2_00403.ogg",
+    "files/data2_00466.ogg",
+    "files/data2_00467.ogg",
+    "files/data2_00497.ogg"
+];
+
+var name = [
+    "Credits",
+    "Regnum Carnival",
+    "Duel in the colisseum",	
+    "The immortals",			
+    "The message on the stones",
+    "Sand Ocean",
+    "A new adventure begins",
+    "Skolheim/Rottersval",
+    "Hopstad",
+    "Montsognir",
+    "Santas House",
+    "files/data2_00002.ogg",
+    "files/data2_00003.ogg",
+    "files/data2_00004.ogg",
+    "files/data2_00005.ogg",
+    "files/data2_00006.ogg",
+    "files/data2_00007.ogg",
+    "files/data2_00008.ogg",
+    "files/data2_00009.ogg",
+    "files/data2_00197.ogg",
+    "files/data2_00254.ogg",
+    "files/data2_00256.ogg",
+    "files/data2_00257.ogg",
+    "files/data2_00258.ogg",
+    "files/data2_00259.ogg",
+    "files/data2_00260.ogg",
+    "files/data2_00261.ogg",
+    "files/data2_00262.ogg",
+    "files/data2_00292.ogg",
+    "files/data2_00401.ogg",
+    "files/data2_00403.ogg",
+    "files/data2_00466.ogg",
+    "files/data2_00467.ogg",
+    "files/data2_00497.ogg"
+];
+
+var autoplay = true;
+var currentIndex = 0;
+var audioPlayer = document.getElementById("innerplayer");
+var playlist = document.getElementById("playlist");
+
+function createPlaylist() {
+    for (var i = 0; i < url.length; i++) {
+        var listItem = document.createElement("li");
+        var link = document.createElement("a");
+        link.href = "#";
+        link.textContent = name[i];
+        link.addEventListener("click", (function(index) {
+            return function() {
+                playSong(index);
+            };
+        })(i));
+        listItem.appendChild(link);
+        playlist.appendChild(listItem);
+    }
+}
+
+function playSong(index) {
+    currentIndex = index;
+    audioPlayer.src = url[index];
+    audioPlayer.play();
+}
+
+function nextSong() {
+    currentIndex++;
+    if (currentIndex >= url.length) {
+        currentIndex = 0;
+    }
+    playSong(currentIndex);
+}
+
+function previousSong() {
+    currentIndex--;
+    if (currentIndex < 0) {
+        currentIndex = url.length - 1;
+    }
+    playSong(currentIndex);
+}
+
+function Lautstaerke() {
+    audioPlayer.volume = 0.7;
+    var neu = 0;
+    if (neu !== 0) {
+        // document.getElementById('innerplayer').focus(); // führt zu Springen des Fokus in iOS
+    }
+}
+
+audioPlayer.addEventListener("ended", function() {
+    nextSong();
+});
+
+createPlaylist();
+playSong(currentIndex);
+</script>
+
+</body>
+</html>
