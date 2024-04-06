@@ -12,84 +12,112 @@
 <div id="ie_fallback"></div>
 <div id="player">
 <audio id="innerplayer" src="" controls></audio>
+<p id="song-name" style="color:white;font-weight: 800;"></p>
+<p id="song-description" style="color:white"></p>
+<p id="song-artist" style="color:white;font-size: 10px;"></p>
 <ul id="playlist"></ul>
 </div>
 
 <div id="down_hinweis"></div>
 
 <script>
-var url = [
-    "https://cdn.treudler.net/18/190905224714075-uGEWb-x.mp3",
-    "https://cdn.treudler.net/18/190905222611860-ZrM0v-x.mp3",
-    "https://cdn.treudler.net/18/190905222658546-YH6rb-x.mp3",
-    "https://cdn.treudler.net/18/190905222710535-fbHmR-x.mp3",		
-    "https://cdn.treudler.net/18/190905222736082-w3Bxf-x.mp3",
-    "https://cdn.treudler.net/18/190905222822984-QjyL4-x.mp3",
-    "https://cdn.treudler.net/18/190905222840877-mtsOk-x.mp3",
-    "https://cdn.treudler.net/18/190905222904880-yDwNj-x.mp3",
-    "https://cdn.treudler.net/18/190905224741300-ZsybV-x.mp3",
-    "https://cdn.treudler.net/18/190905224951800-ioiW1-x.mp3",
-    "https://cdn.treudler.net/18/190905224019533-JCHxu-x.mp3",
-    "files/data2_00002.ogg",
-    "files/data2_00003.ogg",
-    "files/data2_00004.ogg",
-    "files/data2_00005.ogg",
-    "files/data2_00006.ogg",
-    "files/data2_00007.ogg",
-    "files/data2_00008.ogg",
-    "files/data2_00009.ogg",
-    "files/data2_00197.ogg",
-    "files/data2_00254.ogg",
-    "files/data2_00256.ogg",
-    "files/data2_00257.ogg",
-    "files/data2_00258.ogg",
-    "files/data2_00259.ogg",
-    "files/data2_00260.ogg",
-    "files/data2_00261.ogg",
-    "files/data2_00262.ogg",
-    "files/data2_00292.ogg",
-    "files/data2_00401.ogg",
-    "files/data2_00403.ogg",
-    "files/data2_00466.ogg",
-    "files/data2_00467.ogg",
-    "files/data2_00497.ogg"
-];
+var songs = [
+    {
+        url: "files/data2_00002.ogg",
+        name: "files/data2_00002.ogg",
+        artist: "unknown",
+        description: "description",
+    },
+    {
+        url: "files/data2_00003.ogg",
+        name: "files/data2_00003.ogg",
+    },
+    {
+        url: "files/data2_00004.ogg",
+        name: "files/data2_00004.ogg",
+    },
+    {
+        url: "files/data2_00005.ogg",
+        name: "files/data2_00005.ogg",
+    },
+    {
+        url: "files/data2_00006.ogg",
+        name: "files/data2_00006.ogg",
+    },
+    {
+        url: "files/data2_00007.ogg",
+        name: "files/data2_00007.ogg",
+    },
+    {
+        url: "files/data2_00008.ogg",
+        name: "files/data2_00008.ogg",
+    },
+    {
+        url: "files/data2_00009.ogg",
+        name: "files/data2_00009.ogg",
+    },
+    {
+        url: "files/data2_00197.ogg",
+        name: "files/data2_00197.ogg",
+    },
+    {
+        url: "files/data2_00254.ogg",
+        name: "files/data2_00254.ogg",
+    },
+    {
+        url: "files/data2_00256.ogg",
+        name: "files/data2_00256.ogg",
+    },
+    {
+        url: "files/data2_00257.ogg",
+        name: "files/data2_00257.ogg",
+    },
+    {
+        url: "files/data2_00258.ogg",
+        name: "files/data2_00258.ogg",
+    },
+    {
+        url: "files/data2_00259.ogg",
+        name: "files/data2_00259.ogg",
+    },
+    {
+        url: "files/data2_00260.ogg",
+        name: "files/data2_00260.ogg",
+    },
+    {
+        url: "files/data2_00261.ogg",
+        name: "files/data2_00261.ogg",
+    },
+    {
+        url: "files/data2_00262.ogg",
+        name: "files/data2_00262.ogg",
+    },
+    {
+        url: "files/data2_00292.ogg",
+        name: "files/data2_00292.ogg",
+    },
+    {
+        url: "files/data2_00401.ogg",
+        name: "files/data2_00401.ogg",
+    },
+    {
+        url: "files/data2_00403.ogg",
+        name: "files/data2_00403.ogg",
+    },
+    {
+        url: "files/data2_00466.ogg",
+        name: "files/data2_00466.ogg",
+    },
+    {
+        url: "files/data2_00467.ogg",
+        name: "files/data2_00467.ogg",
+    },
+    {
+        url: "files/data2_00497.ogg",
+        name: "files/data2_00497.ogg",
+    },
 
-var name = [
-    "Credits",
-    "Regnum Carnival",
-    "Duel in the colisseum",	
-    "The immortals",			
-    "The message on the stones",
-    "Sand Ocean",
-    "A new adventure begins",
-    "Skolheim/Rottersval",
-    "Hopstad",
-    "Montsognir",
-    "Santas House",
-    "files/data2_00002.ogg",
-    "files/data2_00003.ogg",
-    "files/data2_00004.ogg",
-    "files/data2_00005.ogg",
-    "files/data2_00006.ogg",
-    "files/data2_00007.ogg",
-    "files/data2_00008.ogg",
-    "files/data2_00009.ogg",
-    "files/data2_00197.ogg",
-    "files/data2_00254.ogg",
-    "files/data2_00256.ogg",
-    "files/data2_00257.ogg",
-    "files/data2_00258.ogg",
-    "files/data2_00259.ogg",
-    "files/data2_00260.ogg",
-    "files/data2_00261.ogg",
-    "files/data2_00262.ogg",
-    "files/data2_00292.ogg",
-    "files/data2_00401.ogg",
-    "files/data2_00403.ogg",
-    "files/data2_00466.ogg",
-    "files/data2_00467.ogg",
-    "files/data2_00497.ogg"
+    // Add more songs here...
 ];
 
 var autoplay = true;
@@ -98,11 +126,11 @@ var audioPlayer = document.getElementById("innerplayer");
 var playlist = document.getElementById("playlist");
 
 function createPlaylist() {
-    for (var i = 0; i < url.length; i++) {
+    for (var i = 0; i < songs.length; i++) {
         var listItem = document.createElement("li");
         var link = document.createElement("a");
         link.href = "#";
-        link.textContent = name[i];
+        link.textContent = songs[i].name;
         link.addEventListener("click", (function(index) {
             return function() {
                 playSong(index);
@@ -115,13 +143,16 @@ function createPlaylist() {
 
 function playSong(index) {
     currentIndex = index;
-    audioPlayer.src = url[index];
+    audioPlayer.src = songs[index].url;
     audioPlayer.play();
+    document.getElementById("song-name").textContent = songs[index].name; // Display song name
+    document.getElementById("song-description").textContent = songs[index].description; // Display song description
+    document.getElementById("song-artist").textContent = 'Artist: ' + songs[index].artist; // Display song artist
 }
 
 function nextSong() {
     currentIndex++;
-    if (currentIndex >= url.length) {
+    if (currentIndex >= songs.length) {
         currentIndex = 0;
     }
     playSong(currentIndex);
@@ -130,7 +161,7 @@ function nextSong() {
 function previousSong() {
     currentIndex--;
     if (currentIndex < 0) {
-        currentIndex = url.length - 1;
+        currentIndex = songs.length - 1;
     }
     playSong(currentIndex);
 }
@@ -148,7 +179,7 @@ audioPlayer.addEventListener("ended", function() {
 });
 
 createPlaylist();
-playSong(currentIndex);
+// playSong(currentIndex);
 </script>
 
 </body>
