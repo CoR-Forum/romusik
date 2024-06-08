@@ -1,7 +1,7 @@
 # Regnum Online (Champions of Regnum) Music Player
 
 ## -> [cor-forum.de/music](https://cor-forum.de/music)
-for iframe use [https://cor-forum.github.io/romusik/]
+for iframe use [cor-forum.github.io/romusik](https://cor-forum.github.io/romusik/)
 
 ## How to contribute
 
