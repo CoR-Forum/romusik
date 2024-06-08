@@ -1,6 +1,6 @@
 # Regnum Online (Champions of Regnum) Music Player
 
-## -> [cor-forum.de/music](cor-forum.de/music)
+## -> [cor-forum.de/music](https://cor-forum.de/music)
 
 ## How to contribute
 
