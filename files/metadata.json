@@ -1,17 +1,27 @@
 [
         {
             "url": "files/data2_00002.ogg",
-            "name": "files/data2_00002.ogg",
+            "name": "Title Music",
             "artist": "unknown",
-            "description": "description"
+            "description": "Login Screen Music"
+        },
+        {
+            "url": "files/190905222658546-YH6rb-x.mp3",
+            "name": "Duel in the colosseum",
+            "artist": "unknown"
+        },
+        {
+            "url": "files/190905222904880-yDwNj-x.mp3",
+            "name": "Skolheim/Rottersvall"
         },
         {
             "url": "files/data2_00003.ogg",
-            "name": "files/data2_00003.ogg"
+            "name": "The immortals"
         },
         {
             "url": "files/data2_00004.ogg",
-            "name": "files/data2_00004.ogg"
+            "name": "Battle Music (1)",
+            "artist": "unknown"
         },
         {
             "url": "files/data2_00005.ogg",
@@ -31,7 +41,15 @@
         },
         {
             "url": "files/data2_00009.ogg",
-            "name": "files/data2_00009.ogg"
+            "name": "Credits",
+            "artist": "unknown",
+            "description": "Music of the credits and some trailers."
+        },
+        {
+            "url": "files/190905222611860-ZrM0v-x.mp3",
+            "name": "Carnival",
+            "artist": "unknown",
+            "description": "Music of the carnival event and island."
         },
         {
             "url": "files/data2_00197.ogg",
@@ -39,11 +57,11 @@
         },
         {
             "url": "files/data2_00254.ogg",
-            "name": "files/data2_00254.ogg"
+            "name": "Hopstadt"
         },
         {
             "url": "files/data2_00256.ogg",
-            "name": "files/data2_00256.ogg"
+            "name": "Hopstadt (2)"
         },
         {
             "url": "files/data2_00257.ogg",
@@ -55,11 +73,13 @@
         },
         {
             "url": "files/data2_00259.ogg",
-            "name": "files/data2_00259.ogg"
+            "name": "The message on the stones"
         },
         {
             "url": "files/data2_00260.ogg",
-            "name": "files/data2_00260.ogg"
+            "name": "Santas House",
+            "artist": "unknown",
+            "description": "Music of the christmas event island."
         },
         {
             "url": "files/data2_00261.ogg",
@@ -71,11 +91,11 @@
         },
         {
             "url": "files/data2_00292.ogg",
-            "name": "files/data2_00292.ogg"
+            "name": "Montsognir"
         },
         {
             "url": "files/data2_00401.ogg",
-            "name": "files/data2_00401.ogg"
+            "name": "A new adventure begins"
         },
         {
             "url": "files/data2_00403.ogg",
@@ -91,6 +111,6 @@
         },
         {
             "url": "files/data2_00497.ogg",
-            "name": "files/data2_00497.ogg"
+            "name": "Sand Ocean"
         }
 ]
