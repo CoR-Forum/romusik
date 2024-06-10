@@ -1,116 +1,132 @@
 [
-        {
-            "url": "files/data2_00002.ogg",
-            "name": "Title Music",
-            "artist": "unknown",
-            "description": "Login Screen Music"
-        },
-        {
-            "url": "files/190905222658546-YH6rb-x.mp3",
-            "name": "Duel in the colosseum",
-            "artist": "unknown"
-        },
-        {
-            "url": "files/190905222904880-yDwNj-x.mp3",
-            "name": "Skolheim/Rottersvall"
-        },
-        {
-            "url": "files/data2_00003.ogg",
-            "name": "The immortals"
-        },
-        {
-            "url": "files/data2_00004.ogg",
-            "name": "Battle Music (1)",
-            "artist": "unknown"
-        },
-        {
-            "url": "files/data2_00005.ogg",
-            "name": "files/data2_00005.ogg"
-        },
-        {
-            "url": "files/data2_00006.ogg",
-            "name": "files/data2_00006.ogg"
-        },
-        {
-            "url": "files/data2_00007.ogg",
-            "name": "files/data2_00007.ogg"
-        },
-        {
-            "url": "files/data2_00008.ogg",
-            "name": "files/data2_00008.ogg"
-        },
-        {
-            "url": "files/data2_00009.ogg",
-            "name": "Credits",
-            "artist": "unknown",
-            "description": "Music of the credits and some trailers."
-        },
-        {
-            "url": "files/190905222611860-ZrM0v-x.mp3",
-            "name": "Carnival",
-            "artist": "unknown",
-            "description": "Music of the carnival event and island."
-        },
-        {
-            "url": "files/data2_00197.ogg",
-            "name": "files/data2_00197.ogg"
-        },
-        {
-            "url": "files/data2_00254.ogg",
-            "name": "Hopstadt"
-        },
-        {
-            "url": "files/data2_00256.ogg",
-            "name": "Hopstadt (2)"
-        },
-        {
-            "url": "files/data2_00257.ogg",
-            "name": "files/data2_00257.ogg"
-        },
-        {
-            "url": "files/data2_00258.ogg",
-            "name": "files/data2_00258.ogg"
-        },
-        {
-            "url": "files/data2_00259.ogg",
-            "name": "The message on the stones"
-        },
-        {
-            "url": "files/data2_00260.ogg",
-            "name": "Santas House",
-            "artist": "unknown",
-            "description": "Music of the christmas event island."
-        },
-        {
-            "url": "files/data2_00261.ogg",
-            "name": "files/data2_00261.ogg"
-        },
-        {
-            "url": "files/data2_00262.ogg",
-            "name": "files/data2_00262.ogg"
-        },
-        {
-            "url": "files/data2_00292.ogg",
-            "name": "Montsognir"
-        },
-        {
-            "url": "files/data2_00401.ogg",
-            "name": "A new adventure begins"
-        },
-        {
-            "url": "files/data2_00403.ogg",
-            "name": "files/data2_00403.ogg"
-        },
-        {
-            "url": "files/data2_00466.ogg",
-            "name": "files/data2_00466.ogg"
-        },
-        {
-            "url": "files/data2_00467.ogg",
-            "name": "files/data2_00467.ogg"
-        },
-        {
-            "url": "files/data2_00497.ogg",
-            "name": "Sand Ocean"
-        }
+    {
+        "url": "files/32781-intro.ogg",
+        "name": "Intro"
+    },
+    {
+        "url": "files/data2_00009.ogg",
+        "name": "Credits",
+        "description": "Music of the credits and some trailers."
+    },
+    {
+        "url": "files/79338-Anthem.ogg",
+        "name": "Anthem"
+    },
+    {
+        "url": "files/32562-forest gump.ogg",
+        "name": "forest gump"
+    },
+    {
+        "url": "files/50194-Syrtis Music.ogg",
+        "name": "Syrtis Music (The immortals)"
+    },
+    {
+        "url": "files/50202-regnum_combat.ogg",
+        "name": "Combat Music 1"
+    },
+    {
+        "url": "files/50203-regnum_combat_2.ogg",
+        "name": "Combat Music 2"
+    },
+    {
+        "url": "files/50206-regnum_ambient_forest.ogg",
+        "name": "Regnum ambient forest"
+    },
+    {
+        "url": "files/50207-regnum_ambient_frozen.ogg",
+        "name": "Regnum ambient frozen"
+    },
+    {
+        "url": "files/50208-regnum_ambient_graveyard.ogg",
+        "name": "Regnum ambient graveyard"
+    },
+    {
+        "url": "files/50209-regnum_forest.ogg",
+        "name": "Regnum forest"
+    },
+    {
+        "url": "files/51126-.ogg",
+        "name": "files/51126-.ogg"
+    },
+    {
+        "url": "files/51127-.ogg",
+        "name": "files/51127-.ogg"
+    },
+    {
+        "url": "files/53455-regnum_alsius_town.ogg",
+        "name": "Hopstadt"
+    },
+    {
+        "url": "files/53869-.ogg",
+        "name": "Hopstadt 2"
+    },
+    {
+        "url": "files/53870-.ogg",
+        "name": "files/53870-.ogg"
+    },
+    {
+        "url": "files/53871-.ogg",
+        "name": "files/53871-.ogg"
+    },
+    {
+        "url": "files/53872-.ogg",
+        "name": "The message on the stones"
+    },
+    {
+        "url": "files/53873-.ogg",
+        "name": "Santas House",
+        "description": "Music of the christmas event island."
+    },
+    {
+        "url": "files/53874-.ogg",
+        "name": "files/53874-.ogg"
+    },
+    {
+        "url": "files/53875-.ogg",
+        "name": "files/53875-.ogg"
+    },
+    {
+        "url": "files/54579-Regnum Alsius.ogg",
+        "name": "Alsius - Montsognir"
+    },
+    {
+        "url": "files/55663-regnum ambience prairie.ogg",
+        "name": "A new adventure begins"
+    },
+    {
+        "url": "files/55667-regnum ambience prairie 3.ogg",
+        "name": "files/55667-regnum ambience prairie 3.ogg"
+    },
+    {
+        "url": "files/56934-Regnum ignis.ogg",
+        "name": "files/56934-Regnum ignis.ogg"
+    },
+    {
+        "url": "files/57249-Regnum swamp.ogg",
+        "name": "files/57249-Regnum swamp.ogg"
+    },
+    {
+        "url": "files/57691-Regnum ambience reddesert.ogg",
+        "name": "files/57691-Regnum ambience reddesert.ogg"
+    },
+    {
+        "url": "files/76844-Aboriginal ruins 2.ogg",
+        "name": "files/76844-Aboriginal ruins 2.ogg"
+    },
+    {
+        "url": "files/76845-Carnival Island 2.ogg",
+        "name": "files/76845-Carnival Island 2.ogg"
+    },
+    {
+        "url": "files/190905222904880-yDwNj-x.mp3",
+        "name": "Skolheim/Rottersvall"
+    },
+    {
+        "url": "files/data2_00466.ogg",
+        "name": "files/data2_00466.ogg"
+    },
+    {
+        "url": "files/data2_00497.ogg",
+        "name": "Sand Ocean"
+    }
 ]
