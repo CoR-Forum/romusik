@@ -60,7 +60,7 @@ function playSong(index) {
     audioPlayer.play();
     document.getElementById("song-name").textContent = songs[index].name; // Display song name
     document.getElementById("song-description").textContent = songs[index].description; // Display song description
-    document.getElementById("song-artist").textContent = 'Artist: ' + songs[index].artist; // Display song artist
+    document.getElementById("song-artist").textContent = songs[index].artist; // Display song artist
 }
 
 function nextSong() {
